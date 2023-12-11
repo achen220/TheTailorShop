@@ -2,7 +2,7 @@ import express from "express";
 import aiController from "../controllers/aiController.js";
 const aiRouter = express.Router()
 
-aiRouter.post('/', (req,res) => {
+aiRouter.post('/', aiController.sendAI,(req,res) => {
   res.status(200).json("dwqdwq")
 })
 
